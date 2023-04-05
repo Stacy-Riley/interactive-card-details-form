@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+.max-width-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  min-height: 100%; */
+}
+
+
+  /*---------- HEADER ----------*/
+
+  /*---------- CONTENT AREA ----------*/
+  
+  /*---------- FOOTER ----------*/
