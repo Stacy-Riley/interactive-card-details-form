@@ -63,7 +63,7 @@ I am committed to honing my skills in accessing and storing user data effectivel
 ### Useful resources
 
 - [Example resource 1](website here) - This helped me ...
-- [Example resource 2](website here) - This helped me learn more about ...
+- [Example resource 2](https://www.captain-design.com/blog/how-to-export-images-in-figma/#:~:text=Export%20Frames%20to%20JPG,and%20hit%20the%20Export%20button.) - This helped me learn how to export images from figma designs.
 
 ## Author
 
