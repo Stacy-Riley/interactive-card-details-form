@@ -12,22 +12,215 @@ html {
 }
 
 body {
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   height: 100%;
   margin: 0;
 }
 
 .max-width-container {
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  min-height: 100%; */
+  min-height: 100%; 
+ } 
+
+/**************************************************/
+/* Credit Card Form Page */
+/**************************************************/
+
+.top-image-container {
+  position: relative;
+  background-color: #21092F;
+  margin: 0;
+  height: 240px;
+  width: 375px;
+  margin-bottom: 91px;
+}
+
+figure {
+  margin: 0; 
+}
+
+img {
+  width: 100%;
+  border-radius: 7px;
+  margin: 0;  
+}
+
+.cc-back-wrapper {
+  margin: 0;
+  position: absolute;
+  top: 32px;
+  left: 73px;
+  width: 286px;
+  height: 157px;
+}
+
+.cc-front-wrapper {
+  margin: 0;
+  position: absolute;
+  top: 126px;
+  left: 16px;
+  width: 286px;
+  height: 157px;
+}
+
+/**************************************************/
+/* Form Section */
+/**************************************************/
+form {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 327px;
+}
+
+.exp-cvc-container {
+  display: flex;
+  flex: row wrap;
+}
+
+label {
+  color: #21092F;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.31px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+input {
+  padding: 0;
+  height: 45px;
+  border: 1px solid #DFDEE0;
+  margin-top: 9px;
+  margin-bottom: 31px;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  color: #DFDEE0;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 16px; 
+}
+
+.exp-wrapper input {
+  padding: 0;
+  width: 72px;
+  justify-content: space-between;
+}
+
+.exp-wrapper input:first-of-type {
+  margin-right: 6px;
+}
+
+.cvc-wrapper input {
+  width: 164px;
+}
+
+.confirm-button {
+  height: 53px;
+  background-color: #21092F;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22.97px;
+  border-radius: 8px;
+  border: none;
+}
+
+/**************************************************/
+/* Change of Visibility */
+/**************************************************/
+
+.entry-page-wrapper {
+  display: none;
+}
+.thank-you-page-wrapper {
+  /* display: none; */
+}
+
+/**************************************************/
+/* Thank You Page */
+/**************************************************/
+
+.thank-you-details-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-flow: column wrap;
+  margin: 0;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 327px;
+}
+
+/* Checkmark image */
+.circle-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.thank-you-container {
+  text-align: center;
+}
+
+.thank-you {
+  color: #21092F;
+  font-size: 28px;
+  line-height: 35.73px;
+  letter-spacing: 3.42px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.thank-you-message  {
+  color: #8F8694;
+  font-size: 18px;
+  line-height: 22.97px;
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.continue-button {
+  height: 53px;
+  width: 327px;
+  background-color: #21092F;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22.97px;
+  border-radius: 8px;
+  border: none;
 }
 
 
-  /*---------- HEADER ----------*/
 
-  /*---------- CONTENT AREA ----------*/
+
+
+
   
-  /*---------- FOOTER ----------*/
+/**************************************************/
+/* Footer Section */
+/**************************************************/
+footer a {
+  color: black;
+}
+
+.front-end-mention {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 35px;
+}
+
+.coded-by {
+  text-align: center;
+  margin-top: 0;
+}
