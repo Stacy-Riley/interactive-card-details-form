@@ -36,6 +36,9 @@ body {
   height: 240px;
   width: 375px;
   margin-bottom: 91px;
+  box-shadow: 
+  0px 4px 4px 0 rgba(0, 0, 0, 0.25),
+  0px 39px 60px 0 rgba(0, 0, 0, 0.1425);
 }
 
 figure {
@@ -44,8 +47,8 @@ figure {
 
 img {
   width: 100%;
+  min-height: 100%;
   border-radius: 7px;
-  margin: 0;  
 }
 
 .cc-back-wrapper {
@@ -58,12 +61,15 @@ img {
 }
 
 .cc-front-wrapper {
+  border-radius: 7px;
   margin: 0;
+  padding: 0;
   position: absolute;
   top: 126px;
   left: 16px;
   width: 286px;
   height: 157px;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 /**************************************************/
@@ -79,7 +85,7 @@ form {
 
 .exp-cvc-container {
   display: flex;
-  flex: row wrap;
+  flex-flow: row wrap;
 }
 
 label {
@@ -135,11 +141,11 @@ input::placeholder {
 /* Change of Visibility */
 /**************************************************/
 
-.entry-page-wrapper {
-  display: none;
-}
-.thank-you-page-wrapper {
+.entry-page-display {
   /* display: none; */
+}
+.thank-you-page-display{
+  display: none;
 }
 
 /**************************************************/
@@ -185,7 +191,7 @@ input::placeholder {
 .thank-you-message  {
   color: #8F8694;
   font-size: 18px;
-  line-height: 22.97px;
+  line-height: 23px;
   margin-top: 0;
   margin-bottom: 48px;
 }
@@ -201,12 +207,6 @@ input::placeholder {
   border: none;
 }
 
-
-
-
-
-
-  
 /**************************************************/
 /* Footer Section */
 /**************************************************/
@@ -223,4 +223,98 @@ footer a {
 .coded-by {
   text-align: center;
   margin-top: 0;
+}
+
+/**************************************************/
+/* Desktop Section */
+/**************************************************/
+/* Credit Card Form Page -Desktop */
+
+@media (min-width: 1200px) {
+  .max-width-container {
+    justify-content: space-between;
+  }
+
+  .entry-page-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .top-image-container {
+    width: 483px;
+    min-height: 900px;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 957px;
+  }
+
+  form { 
+    width: 381px;
+    margin-left: 127px;
+  }
+  
+  .cc-front-wrapper {
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 187px;
+    left: 164px;
+    width: 447px;
+    height: 245px;
+    box-shadow: 
+    0px 39px 60px 0 rgba(0, 0, 0, 0.1425);
+  }
+  
+  .cc-back-wrapper {
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 469px;
+    left: 258px;
+    width: 447px;
+    height: 245px;
+    box-shadow: 
+    0px 39px 60px 0 rgba(0, 0, 0, 0.1425);
+  }  
+
+  img {
+  border-radius: 10px;
+  }
+
+  .max-width-container {
+    justify-content: space-between;
+  }
+
+  .thank-you-page-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .top-image-container {
+    width: 483px;
+    min-height: 900px;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  .thank-you-details-wrapper {
+    width: 957px;
+    margin: 0;
+  }
+
+  .continue-button {
+    width: 381px;
+  }
+
+  .circle-container,
+  .thank-you-container {
+    margin-left: 127px;
+  }
 }
