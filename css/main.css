@@ -85,7 +85,6 @@ form {
 
 .exp-cvc-container {
   display: flex;
-  flex-flow: row wrap;
 }
 
 label {
@@ -102,25 +101,43 @@ input {
   height: 45px;
   border: 1px solid #DFDEE0;
   margin-top: 9px;
-  margin-bottom: 31px;
+  /* margin-bottom: 31px; */
   border-radius: 8px;
+  font-size: 18px;
+  padding-left: 16px;
 }
 
 input::placeholder {
   color: #DFDEE0;
   font-size: 18px;
-  line-height: 23px;
-  padding-left: 16px; 
+  line-height: 23px; 
+}
+/* Applied to the input box to warn of error */
+.error {
+  border: 1px solid rgba(255, 80, 80, 1);
+}
+.error-message {
+  color: rgba(255, 80, 80, 1);
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 26px;
+  height: 15.31px;
+}
+
+.exp-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .exp-wrapper input {
-  padding: 0;
   width: 72px;
   justify-content: space-between;
 }
 
 .exp-wrapper input:first-of-type {
-  margin-right: 6px;
+  /* margin-right: 6px; */
 }
 
 .cvc-wrapper input {
