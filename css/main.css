@@ -101,10 +101,10 @@ input {
   height: 45px;
   border: 1px solid #DFDEE0;
   margin-top: 9px;
-  /* margin-bottom: 31px; */
   border-radius: 8px;
   font-size: 18px;
   padding-left: 16px;
+  cursor: pointer;
 }
 
 input::placeholder {
@@ -112,10 +112,12 @@ input::placeholder {
   font-size: 18px;
   line-height: 23px; 
 }
+
 /* Applied to the input box to warn of error */
 .error {
   border: 1px solid rgba(255, 80, 80, 1);
 }
+
 .error-message {
   color: rgba(255, 80, 80, 1);
   font-size: 12px;
@@ -136,10 +138,6 @@ input::placeholder {
   justify-content: space-between;
 }
 
-.exp-wrapper input:first-of-type {
-  /* margin-right: 6px; */
-}
-
 .cvc-wrapper input {
   width: 164px;
 }
@@ -152,16 +150,18 @@ input::placeholder {
   line-height: 22.97px;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 
 /**************************************************/
 /* Change of Visibility */
 /**************************************************/
 
-.entry-page-display {
-  /* display: none; */
-}
 .thank-you-page-display{
+  display: none;
+}
+
+.hide-image {
   display: none;
 }
 
@@ -304,10 +304,19 @@ footer a {
   img {
   border-radius: 10px;
   }
+  #exp-date-month,
+  #exp-date-year {
+    width: 80px;
+  }
+  #cvc-code {
+    width:  191px;
+  }
 
   .max-width-container {
     justify-content: space-between;
   }
+
+  /* Thank You Page -Desktop */
 
   .thank-you-page-wrapper {
     display: flex;
